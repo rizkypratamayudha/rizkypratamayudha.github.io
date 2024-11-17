@@ -1,0 +1,429 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- Icon -->
+        <link rel="icon" href="assets/logo.png" />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+        <div class="logo">
+            <a href="/">Yudha</a>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skill</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="extra-nav">
+            <a href="">
+                <button >Download CV</button>
+            </a>
+            
+        </div>
+
+        <div id="menu" class="hamburger-menu">
+            <svg
+            width="35px"
+            height="35px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M4 18L20 18"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+            />
+            <path
+                d="M4 12L20 12"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+            />
+            <path
+                d="M4 6L20 6"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+            />
+            </svg>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="nav-mobile" class="mobile-nav">
+            <div id="close-mobile" class="close">
+            <svg
+                width="800px"
+                height="800px"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <defs>
+                <style>
+                    .cls-1 {
+                    fill: none;
+                    stroke: #ffffff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                    }
+                </style>
+                </defs>
+
+                <title />
+
+                <g id="cross">
+                <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+
+                <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+                </g>
+            </svg>
+            </div>
+            <ul>
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skilll">Skilll</a></li>
+            <li><a class="nav-link" href="#project">Project</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+        <div class="container">
+            <div class="content">
+            <svg viewBox="0 0 1500 500" data-aos="fade-down">
+                <text x="50%" y="50%" text-anchor="middle">Rizky Pratama Yudha</text><br>
+            </svg>
+            <h1 data-aos="zoom-in-up">
+                Simplifying Frontend & Backend Development for Your <span>Projects</span>
+            </h1>
+            <a href="https://github.com/rizkypratamayudha">
+                <button data-aos="zoom-out"><span><i class="fa-brands fa-github"></i>&nbsp;&nbsp;Github</span></button>
+            </a>
+            </div>
+        </div>
+        </section>
+
+        <section id="about" class="about">
+        <div class="container">
+            <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+                About Me
+            </h1>
+            <div class="about-me">
+                <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
+                <div class="image-box">
+                    <img src="assets/yudha.jpg" alt="profile" />
+                </div>
+                </div>
+
+                <div
+                data-aos="zoom-in-left"
+                data-aos-delay="300"
+                class="description"
+                >
+                <div class="name-role">
+                    <h1>Rizky Pratama Yudha</h1>
+                    <div class="role">
+                    <h2>Backend Developer</h2>
+                    </div>
+                </div>
+                <p>
+                    Hello! Saya adalah Mahasiswa Politeknik Negeri Malang yang berfokus pada Backend Developer dengan pengalaman dalam membangun aplikasi server-side yang scalable, aman, dan berkinerja tinggi. 
+                    Saya ahli dalam menggunakan teknologi seperti Laravel, MySql, Javascript, PHP Native, API yang digunakan pada aplikasi Mobile Flutter.
+                    <br /><br />
+                    Passion saya adalah mengoptimalkan kinerja aplikasi dengan solusi yang efisien. Saya juga memiliki pengalaman dalam menggunakan teknologi frontend seperti HTML 5, CSS, Bootstrap 5, Tailwind CSS, Templating AdminLTE
+                    <br /><br />
+                    Saya percaya bahwa kerja tim dan kolaborasi adalah kunci untuk menciptakan solusi terbaik bagi klien dan pengguna akhir.
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="skill" class="skill">
+        <div class="container">
+            <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+                Skill
+            </h1>
+
+            <div class="skills" data-aos-delay="500">
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/laravel.svg" alt="html" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/mysql.svg" alt="css" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/javascript.svg" alt="javascript" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/html5.svg" alt="typescript" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/css3.svg" alt="react" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/php.svg" alt="next" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/flutter.svg" alt="alpinejs" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/dart.svg" alt="tailwind" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/tailwind.svg" alt="mysql" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/bootstrap.svg" alt="postgresql" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/figma.svg" alt="figma" />
+                </div>
+                <div data-aos="zoom-in-down" class="skill-box">
+                <img src="assets/icon/github.svg" alt="github" />
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="project" class="project">
+        <div class="container">
+            <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+                Project
+            </h1>
+
+            <div class="projects">
+                <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+                <img src="assets/project/project1.png" alt="project" />
+
+                <div class="description">
+                    <h1>Web Survey Kepuasan Polinema</h1>
+                    <p>
+                    Project Website Sistem Informasi Survey Kepuasan 
+                    Pelanggan Polinema yang dibuat menggunakan
+                    HTML, PHP, dan Javascript dengan database MySQL
+                    </p>
+                    <div class="action">
+                        
+                    <button onclick="window.location.href='https://github.com/rizkypratamayudha/Project-Web-Survey-Kepuasan-Pelanggan-Polinema'" >Github</button>
+                    <button onclick="window.location.href='https://surveykepuasanpelangganpolinema.000webhostapp.com/'" >Demo</button>
+                    </div>
+                </div>
+                </div>
+                <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+                <img src="assets/project/project2.png" alt="project" />
+
+                <div class="description">
+                    <h1>Web Sistem Kompen JTI (progress)</h1>
+                    <p>
+                    Project Website Sistem Informasi Kompen Jurusan Teknologi Informasi yang dibuat menggunakan framework Laravel dan database MySQL
+                    </p>
+                    <div class="action">
+                    <button onclick="window.location.href='https://github.com/rizkypratamayudha/kompenjti'">Github</button>
+                    <button onclick="window.location.href='#'">Demo</button>
+                    </div>
+                </div>
+                </div>
+                <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
+                <img src="assets/project/project3.png" alt="project" />
+
+                <div class="description">
+                    <h1>Aplikasi E-Kompen (progress)</h1>
+                    <p>
+                    Aplikasi Mobile E-Kompen yang menggunakan framework FLutter dart, API yang sama pada website Sistem Kompen JTI
+                    </p>
+                    <div class="action">
+                    <button>Github</button>
+                    <button>Demo</button>
+                    </div>
+                </div>
+                </div>
+                <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+                <img src="assets/project/project4.png" alt="project" />
+
+                <div class="description">
+                    <h1>Redesign UI/UX Web PT.Krakatau Steel</h1>
+                    <p>
+                        Membuat design interface dan memperbarui elemen-elemen visual, layout, dan interaksi website PT Krakatau Steel yang sudah ada
+                    </p>
+                    <div class="action">
+                    
+                    <button onclick="window.location.href='https://www.figma.com/proto/3FBNGKeV7TLyuVgKqFreYQ/K3-PT-Krakatau-Steel?node-id=5-172&node-type=canvas&t=ajDrScXlNfeEPV8D-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A172'">Demo</button>
+                    </div>
+                </div>
+                </div>
+                <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+                <img src="assets/project/project5.png" alt="project" />
+
+                <div class="description">
+                    <h1>UI/UX Aplikasi FIFARR Damaged Road</h1>
+                    <p>
+                        Membuat UI/UX Mobile Application tentang aplikasi pengaduan jalan rusak dengan inovasi fitur reward bagi user dan status pengaduan jalan
+                    </p>
+                    <div class="action">
+                    <button onclick="window.location.href='https://www.figma.com/proto/bQJxM9v0BQCoSkXklMflRd/Mockup-CTPS?node-id=104-76&starting-point-node-id=102%3A29'">Demo</button>
+                    </div>
+                </div>
+                </div>
+                <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
+                <img src="assets/project/comingsoon.png" alt="project" />
+
+                <div class="description">
+                    
+                    <p>
+                    
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="contact" class="contact">
+        <div class="container">
+            <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+                Contact
+            </h1>
+
+            <div class="social-media-container">
+                <div class="social-media">
+                <box-icon color="#fff" type="logo" name="instagram" onclick="window.location.href='https://www.instagram.com/rizkyp._/'"></box-icon>
+                </div>
+                <div class="social-media">
+                <box-icon color="#fff" name="github" type="logo" onclick="window.location.href='https://github.com/rizkypratamayudha'"></box-icon>
+                </div>
+                <div class="social-media">
+                <box-icon
+                    color="#fff"
+                    name="whatsapp"
+                    type="logo"
+                    onclick="window.location.href='https://wa.me/+6282234052425'"
+                ></box-icon>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <footer>
+        <div data-aos="fade-up" data-aos-duration="1000" class="container">
+            <div class="profile">
+            <div class="logo">
+                
+                <a href="">Rizky Pratama Yudha</a>
+            </div>
+
+            <!-- Short About -->
+            <p>
+                Website Portfolio Rizky Pratama Yudha
+            </p>
+
+            <!-- Social Media -->
+            <div class="social-media-container">
+                <div class="social-media">
+                <box-icon color="#fff" type="logo" name="instagram" onclick="window.location.href='https://www.instagram.com/rizkyp._/'"></box-icon>
+                </div>
+                <div class="social-media">
+                <box-icon color="#fff" name="github" type="logo" onclick="window.location.href='https://github.com/rizkypratamayudha'"></box-icon>
+                </div>
+                <div class="social-media">
+                <box-icon color="#fff" type="logo" name="whatsapp" onclick="window.location.href='https://wa.me/+6282234052425'"></box-icon>
+                </div>
+            </div>
+            </div>
+
+            <div class="link-container">
+            <div class="information">
+                <h1>Skill</h1>
+                <ul>
+                <li>
+                    <a href="#">Laravel</a>
+                </li>
+                <li>
+                    <a href="#">MySQL</a>
+                </li>
+                <li>
+                    <a href="#">Flutter</a>
+                </li>
+                <li>
+                    <a href="#">Dart</a>
+                </li>
+                <li>
+                    <a href="#">Tailwind</a>
+                </li>
+                </ul>
+            </div>
+
+            <div class="resource">
+                <h1>Technology</h1>
+                <ul>
+                <li>
+                    <a href="#">Figma</a>
+                </li>
+                <li>
+                    <a href="#">Github</a>
+                </li>
+                <li>
+                    <a href="#">Notion</a>
+                </li>
+                </ul>
+            </div>
+
+            <div class="navigation">
+                <h1>Navigation</h1>
+                <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Skill</a>
+                </li>
+                <li>
+                    <a href="#">Project</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </footer>
+
+        <script src="script.js"></script>
+        <!-- Box Icon -->
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+    </body>
+    </html>
