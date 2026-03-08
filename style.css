@@ -26,12 +26,14 @@
     }
 
     .container {
-    padding: 1rem 6rem;
+    padding: 1rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
     }
 
     .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: bold;
     }
 
@@ -41,9 +43,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 1rem;
     width: 100%;
-    height: 10vh;
+    height: auto;
+    min-height: 70px;
     z-index: 9999;
     }
 
@@ -62,24 +65,24 @@
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
+    font-size: clamp(20px, 4vw, 30px);
     justify-content: center;
     align-items: center;
-    margin-left: 18px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
     }
 
     header nav {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 1.5rem;
     }
 
     header nav a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
     transition: 0.3s linear;
     }
 
@@ -113,9 +116,10 @@
     border-radius: 8px;
     color: #fff;
     font-weight: 600;
-    font-size: 18px;
-    padding: 10px 12px;
+    font-size: clamp(12px, 2vw, 18px);
+    padding: 8px 16px;
     transition: 0.3s linear;
+    white-space: nowrap;
     }
 
     header .extra-nav button:hover {
@@ -149,22 +153,26 @@
     }
 
     .hero .container .content svg {
-    margin-bottom: -9rem;
+    margin-bottom: -5rem;
+    width: 80%;
+    max-width: 100%;
+    height: auto;
     }
 
     .hero .container .content svg text {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 120px;
+    font-size: clamp(40px, 12vw, 120px);
     animation: stroke 5s infinite alternate;
     }
 
     .hero .container .content h1 {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: clamp(1.2rem, 4vw, 2.2rem);
     font-weight: 500;
-    line-height: 48px;
-    width: 65%;
+    line-height: 1.4;
+    width: 90%;
+    max-width: 900px;
     }
 
     .hero .container .content h1 span {
@@ -226,12 +234,14 @@
     }
 
     .about .container .content .about-me {
-    display: flex;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
     }
 
     .about .container .content .about-me .profile {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,16 +254,19 @@
     padding: 8px;
     background-color: #191919;
     border-radius: 16px;
-    width: 75%;
-    height: 75vh;
+    width: 100%;
+    aspect-ratio: 1;
+    max-height: 500px;
     }
 
     .about .container .content .about-me .profile .image-box img {
-    width: 70%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
     }
 
     .about .container .content .about-me .description {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -267,7 +280,7 @@
 
     .about .container .content .about-me .description .name-role h1 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 5vw, 3rem);
     }
 
     .about .container .content .about-me .description .name-role .role {
@@ -277,15 +290,17 @@
 
     .about .container .content .about-me .description .name-role .role h2 {
     font-weight: 500;
-    font-size: 2rem;
-    padding: 4px 6px;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    padding: 6px 12px;
     background-color: #fff;
     border-radius: 8px;
     color: #000;
+    display: inline-block;
     }
 
     .about .container .content .about-me .description p {
-    font-size: 1.2rem;
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
+    line-height: 1.6;
     text-align: justify;
     }
 
@@ -308,21 +323,23 @@
 
     .skill .container .content .skills {
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     align-items: center;
     justify-content: center;
     gap: 12px;
-    width: 50%;
+    width: 95%;
+    max-width: 1000px;
     }
 
     .skill .container .content .skills .skill-box {
-    padding: 4px;
+    padding: 8px;
     border: 2px solid #fff;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    aspect-ratio: 1;
+    min-height: 80px;
     filter: grayscale(100);
     transition: all 0.2s linear;
     }
@@ -340,41 +357,48 @@
 
     .project .container .content .projects {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: start;
     justify-content: center;
     gap: 20px;
-    width: 85%;
+    width: 95%;
+    max-width: 1200px;
     }
 
     .project .container .content .projects .card {
     padding: 16px;
     border: 2px solid #fff;
     border-radius: 12px;
-    height: 450px;
+    height: auto;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
     }
 
     .project .container .content .projects .card img {
     width: 100%;
-    height: 50%;
+    height: 200px;
+    object-fit: cover;
     }
 
     .project .container .content .projects .card .description {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    height: 50%;
+    flex-grow: 1;
     }
 
     .project .container .content .projects .card .description h1 {
     font-weight: bold;
-    font-size: 28px;
+    font-size: clamp(1.2rem, 3vw, 1.75rem);
     }
 
     .project .container .content .projects .card .description p {
-    font-size: 18px;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     font-weight: 400;
     text-align: justify;
+    line-height: 1.5;
+    flex-grow: 1;
     }
 
     .project .container .content .projects .card .description .action {
@@ -458,25 +482,25 @@
     }
 
     footer .container {
-    padding: 4rem;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     width: 100%;
-    height: 100%;
-    gap: 4rem;
+    gap: 3rem;
     }
 
     footer .container .profile {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    width: 25%;
+    gap: 12px;
+    width: 100%;
     }
 
     footer .container .link-container {
-    width: 70%;
-    display: flex;
-    gap: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
     }
 
     footer .container .link-container .information,
@@ -485,7 +509,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 30%;
+    width: 100%;
     }
 
     footer .container .profile .logo {
@@ -624,12 +648,9 @@
     }
     }
 
-    @media screen and (max-width: 1536px) {
-    footer .container {
-        gap: 2rem;
-    }
-    footer .container .link-container {
-        gap: 2rem;
+    @media screen and (max-width: 1200px) {
+    .container {
+        padding: 1rem 1.5rem;
     }
     }
 
@@ -692,14 +713,14 @@
         cursor: pointer;
         position: relative;
         list-style: none;
-        width: 25%;
+        width: auto;
     }
 
     header .mobile-nav ul li a {
         color: #fff;
         text-decoration: none;
         font-weight: 500;
-        font-size: 36px;
+        font-size: clamp(1.5rem, 5vw, 2rem);
         transition: 0.3s linear;
     }
 
@@ -716,6 +737,19 @@
         transition: 0.3s linear;
     }
 
+    .about .container .content .about-me {
+        grid-template-columns: 1fr;
+    }
+
+    .skill .container .content .skills {
+        grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     footer .container .link-container .information ul li::after,
     footer .container .link-container .resource ul li::after,
     footer .container .link-container .navigation ul li::after {
@@ -724,49 +758,111 @@
     }
 
     @media screen and (max-width: 768px) {
-    header .mobile-nav ul li {
-        width: 35%;
+    .skill .container .content .skills {
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        width: 100%;
+    }
+
+    .project .container .content .projects {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .project .container .content .projects .card .description .action {
+        flex-wrap: wrap;
+    }
+
+    .project .container .content .projects .card .description .action button {
+        width: 48%;
     }
 
     footer .container {
-        padding: 1rem 2rem;
-    }
-    footer .container .profile {
-        width: 50%;
-    }
-    footer .container .link-container {
-        flex-direction: column;
-        width: 100%;
+        padding: 2rem 1rem;
     }
 
     footer .container .link-container .information ul li::after,
     footer .container .link-container .resource ul li::after,
     footer .container .link-container .navigation ul li::after {
-        width: 100%;
+        width: 80%;
     }
     }
 
-    @media screen and (max-width: 610px) {
-    footer .container .profile,
+    @media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0.75rem;
+        min-height: 60px;
+    }
+
+    header .logo a {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding-top: 60px;
+    }
+
+    .hero .container .content svg {
+        margin-bottom: -2rem;
+        width: 90%;
+    }
+
+    .hero .container .content button {
+        width: auto;
+        padding: 0.5em 1em;
+    }
+
+    .hero .container .content button span {
+        width: auto;
+        padding: 0.5em;
+    }
+
+    .skill .container .content .skills {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: 10px;
+        width: 100%;
+    }
+
+    .skill .container .content .skills .skill-box {
+        min-height: 70px;
+        padding: 6px;
+    }
+
+    .project .container .content .projects {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project .container .content .projects .card {
+        padding: 12px;
+        min-height: auto;
+    }
+
+    .project .container .content .projects .card img {
+        height: 150px;
+    }
+
+    .project .container .content .projects .card .description .action button {
+        width: 100%;
+        padding: 10px 8px;
+    }
+
+    .contact .container .content .contact-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    footer .container {
+        padding: 1.5rem 1rem;
+        grid-template-columns: 1fr;
+    }
+
     footer .container .link-container {
-        width: 100%;
-    }
-
-    footer .container .link-container .information,
-    footer .container .link-container .resource,
-    footer .container .link-container .navigation {
-        width: 30%;
-    }
-    }
-
-    @media screen and (max-width: 450px) {
-    header .mobile-nav ul li {
-        width: 50%;
-    }
-
-    footer .container .link-container .information,
-    footer .container .link-container .resource,
-    footer .container .link-container .navigation {
-        width: 50%;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1.5rem;
     }
     }
